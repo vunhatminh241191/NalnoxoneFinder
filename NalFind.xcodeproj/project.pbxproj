@@ -12,6 +12,9 @@
 		C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3921DC1A5000008C5F2 /* Main.storyboard */; };
 		C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3951DC1A5000008C5F2 /* Assets.xcassets */; };
 		C30FE3991DC1A5000008C5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3971DC1A5000008C5F2 /* LaunchScreen.storyboard */; };
+		C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */; };
+		C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */; };
+		C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C30FE3951DC1A5000008C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30FE3981DC1A5000008C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30FE39A1DC1A5000008C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterProcess.storyboard; sourceTree = "<group>"; };
+		C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserMainApplication.storyboard; sourceTree = "<group>"; };
+		C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarrierMainApplication.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		C30FE38D1DC1A5000008C5F2 /* NalFind */ = {
 			isa = PBXGroup;
 			children = (
+				C30FE3A01DC1A5550008C5F2 /* StoryBoard */,
 				C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */,
 				C30FE3901DC1A5000008C5F2 /* ViewController.swift */,
-				C30FE3921DC1A5000008C5F2 /* Main.storyboard */,
 				C30FE3951DC1A5000008C5F2 /* Assets.xcassets */,
-				C30FE3971DC1A5000008C5F2 /* LaunchScreen.storyboard */,
 				C30FE39A1DC1A5000008C5F2 /* Info.plist */,
 			);
 			path = NalFind;
+			sourceTree = "<group>";
+		};
+		C30FE3A01DC1A5550008C5F2 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				C30FE3921DC1A5000008C5F2 /* Main.storyboard */,
+				C30FE3971DC1A5000008C5F2 /* LaunchScreen.storyboard */,
+				C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */,
+				C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */,
+				C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */,
+			);
+			name = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +140,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C30FE3991DC1A5000008C5F2 /* LaunchScreen.storyboard in Resources */,
+				C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */,
+				C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */,
 				C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */,
 				C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */,
+				C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NalFind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
@@ -271,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NalFind/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
