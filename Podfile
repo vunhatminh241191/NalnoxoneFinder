@@ -7,5 +7,7 @@ target 'NalFind' do
 
   # Pods for NalFind
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

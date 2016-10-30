@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2F145585D74A51326BC29C9F /* Pods_NalFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863920BAC6E31D841A5076FA /* Pods_NalFind.framework */; };
+		3F87C0771DC6B342006D16EC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C0761DC6B342006D16EC /* SignInViewController.swift */; };
 		3FB3866B1DC6ACDD003EB7DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */; };
 		C30FE38F1DC1A5000008C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */; };
-		C30FE3911DC1A5000008C5F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE3901DC1A5000008C5F2 /* ViewController.swift */; };
+		C30FE3911DC1A5000008C5F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE3901DC1A5000008C5F2 /* MainViewController.swift */; };
 		C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3921DC1A5000008C5F2 /* Main.storyboard */; };
 		C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3951DC1A5000008C5F2 /* Assets.xcassets */; };
 		C30FE3991DC1A5000008C5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3971DC1A5000008C5F2 /* LaunchScreen.storyboard */; };
@@ -21,11 +22,12 @@
 
 /* Begin PBXFileReference section */
 		08F0E17E3A858FD1C5BADD33 /* Pods-NalFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NalFind.release.xcconfig"; path = "Pods/Target Support Files/Pods-NalFind/Pods-NalFind.release.xcconfig"; sourceTree = "<group>"; };
+		3F87C0761DC6B342006D16EC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		863920BAC6E31D841A5076FA /* Pods_NalFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NalFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30FE38B1DC1A5000008C5F2 /* NalFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NalFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C30FE3901DC1A5000008C5F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C30FE3901DC1A5000008C5F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C30FE3931DC1A5000008C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C30FE3951DC1A5000008C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30FE3981DC1A5000008C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F87C0751DC6B097006D16EC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
 		4307CBE665AE88ECDC55D748 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,9 +95,11 @@
 		C30FE38D1DC1A5000008C5F2 /* NalFind */ = {
 			isa = PBXGroup;
 			children = (
+				3F87C0751DC6B097006D16EC /* Modules */,
 				C30FE3A01DC1A5550008C5F2 /* StoryBoard */,
 				C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */,
-				C30FE3901DC1A5000008C5F2 /* ViewController.swift */,
+				C30FE3901DC1A5000008C5F2 /* MainViewController.swift */,
+				3F87C0761DC6B342006D16EC /* SignInViewController.swift */,
 				C30FE3951DC1A5000008C5F2 /* Assets.xcassets */,
 				C30FE39A1DC1A5000008C5F2 /* Info.plist */,
 				3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */,
@@ -234,8 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C30FE3911DC1A5000008C5F2 /* ViewController.swift in Sources */,
+				C30FE3911DC1A5000008C5F2 /* MainViewController.swift in Sources */,
 				C30FE38F1DC1A5000008C5F2 /* AppDelegate.swift in Sources */,
+				3F87C0771DC6B342006D16EC /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
