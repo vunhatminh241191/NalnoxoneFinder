@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYo-Au-Crq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYo-Au-Crq">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,7 +14,7 @@
         <scene sceneID="AOj-MM-WgR">
             <objects>
                 <navigationController navigationBarHidden="YES" id="BYo-Au-Crq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LSA-5m-r9X">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LSA-5m-r9X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -31,34 +35,80 @@
                         <viewControllerLayoutGuide type="bottom" id="ago-PB-pY0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="14P-yO-38n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6x-qe-aAv" userLabel="GrayBar">
+                                <rect key="frame" x="0.0" y="20" width="414" height="55"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="zbK-4b-9AG"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxO-lK-9Ig" userLabel="MapView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxO-lK-9Ig" userLabel="MapView" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="83" width="414" height="583"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-HJ-nqn" userLabel="settings">
+                                <rect key="frame" x="20" y="20" width="44" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gbu-0P-5jd"/>
+                                    <constraint firstAttribute="width" constant="44" id="uHQ-Jk-Ouw"/>
+                                </constraints>
+                                <state key="normal" image="settings"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdj-DQ-nPS">
+                                <rect key="frame" x="181" y="37" width="53" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="3Kq-6q-gYS"/>
+                                    <constraint firstAttribute="height" constant="21" id="HGP-Pr-jon"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Find Nalnoxone" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg3-c7-ZMN">
+                                <rect key="frame" x="283" y="20" width="111" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKh-w3-mun" userLabel="overdose">
+                                <rect key="frame" x="20" y="678" width="374" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="bcX-5I-6BL"/>
+                                </constraints>
+                                <state key="normal" image="overdose"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LxO-lK-9Ig" secondAttribute="trailing" id="8pf-7b-gFD"/>
                             <constraint firstItem="LxO-lK-9Ig" firstAttribute="leading" secondItem="14P-yO-38n" secondAttribute="leading" id="CLQ-va-6xs"/>
+                            <constraint firstItem="hKh-w3-mun" firstAttribute="leading" secondItem="14P-yO-38n" secondAttribute="leadingMargin" id="Fzs-ie-a2d"/>
+                            <constraint firstItem="hKh-w3-mun" firstAttribute="trailing" secondItem="14P-yO-38n" secondAttribute="trailingMargin" id="I5I-QD-jZo"/>
+                            <constraint firstItem="mdj-DQ-nPS" firstAttribute="centerY" secondItem="r6x-qe-aAv" secondAttribute="centerY" id="J4x-jP-fAf"/>
+                            <constraint firstItem="TiE-HJ-nqn" firstAttribute="leading" secondItem="14P-yO-38n" secondAttribute="leadingMargin" id="JYt-sd-tr4"/>
                             <constraint firstItem="LxO-lK-9Ig" firstAttribute="top" secondItem="r6x-qe-aAv" secondAttribute="bottom" constant="8" id="L6z-US-JMh"/>
                             <constraint firstItem="r6x-qe-aAv" firstAttribute="top" secondItem="DL4-Vy-CbT" secondAttribute="bottom" id="Stq-2v-KNh"/>
-                            <constraint firstItem="ago-PB-pY0" firstAttribute="top" secondItem="LxO-lK-9Ig" secondAttribute="bottom" id="bhi-q0-BLO"/>
+                            <constraint firstItem="ago-PB-pY0" firstAttribute="top" secondItem="hKh-w3-mun" secondAttribute="bottom" constant="11" id="ZOp-Oz-oOb"/>
+                            <constraint firstItem="ago-PB-pY0" firstAttribute="top" secondItem="LxO-lK-9Ig" secondAttribute="bottom" constant="70" id="bhi-q0-BLO"/>
                             <constraint firstAttribute="trailing" secondItem="r6x-qe-aAv" secondAttribute="trailing" id="wdl-68-t05"/>
+                            <constraint firstItem="mdj-DQ-nPS" firstAttribute="centerX" secondItem="14P-yO-38n" secondAttribute="centerX" id="x12-Hw-d3E"/>
                             <constraint firstItem="r6x-qe-aAv" firstAttribute="leading" secondItem="14P-yO-38n" secondAttribute="leading" id="yPy-9c-zYt"/>
+                            <constraint firstItem="TiE-HJ-nqn" firstAttribute="top" secondItem="DL4-Vy-CbT" secondAttribute="bottom" id="yWN-2S-yDy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XU9-ro-s4X"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WX0-aM-znw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381.60000000000002" y="31.934032983508249"/>
+            <point key="canvasLocation" x="381.15942028985512" y="31.793478260869566"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="overdose" width="360" height="47"/>
+        <image name="settings" width="26" height="21"/>
+    </resources>
 </document>

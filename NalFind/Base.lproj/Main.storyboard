@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +23,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="ECS-hX-PQf" kind="show" identifier="registerProcess" id="86V-am-dUv"/>
                         <segue destination="VuF-3U-rsL" kind="show" identifier="userMainApplication" id="ZRt-xJ-xEg"/>
                         <segue destination="Qoo-NU-drL" kind="show" identifier="carrierMainApplication" id="SL8-Js-b5K"/>
                     </connections>
@@ -28,21 +30,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--RegisterProcess-->
-        <scene sceneID="bEh-cl-9rA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="RegisterProcess" id="ECS-hX-PQf" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e6F-gW-HRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="646" y="-252"/>
-        </scene>
         <!--UserMainApplication-->
         <scene sceneID="xCw-pQ-rbr">
             <objects>
                 <viewControllerPlaceholder storyboardName="UserMainApplication" id="VuF-3U-rsL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEY-70-kaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="31"/>
+            <point key="canvasLocation" x="762" y="-205"/>
         </scene>
         <!--CarrierMainApplication-->
         <scene sceneID="eRe-z0-zCN">
@@ -50,7 +44,7 @@
                 <viewControllerPlaceholder storyboardName="CarrierMainApplication" id="Qoo-NU-drL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSE-2F-If6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="644" y="316"/>
+            <point key="canvasLocation" x="750" y="124"/>
         </scene>
     </scenes>
 </document>

@@ -3,31 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128065B3815F04AD50707052 /* Pods_NalFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E75368EB7787FAB545F5A /* Pods_NalFind.framework */; };
 		C30FE38F1DC1A5000008C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */; };
 		C30FE3911DC1A5000008C5F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE3901DC1A5000008C5F2 /* ViewController.swift */; };
 		C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3921DC1A5000008C5F2 /* Main.storyboard */; };
-		C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3951DC1A5000008C5F2 /* Assets.xcassets */; };
 		C30FE3991DC1A5000008C5F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3971DC1A5000008C5F2 /* LaunchScreen.storyboard */; };
 		C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */; };
 		C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */; };
 		C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */; };
+		C33C895C1DC538CA008CEF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33C895B1DC538CA008CEF14 /* Assets.xcassets */; };
+		C3CF79F01DC578EA00C2A874 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CF79EF1DC578EA00C2A874 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E54D2C7EB9674FC917C93C0 /* Pods-NalFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NalFind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NalFind/Pods-NalFind.debug.xcconfig"; sourceTree = "<group>"; };
+		1F6E75368EB7787FAB545F5A /* Pods_NalFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NalFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30FE38B1DC1A5000008C5F2 /* NalFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NalFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C30FE3901DC1A5000008C5F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C30FE3931DC1A5000008C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C30FE3951DC1A5000008C5F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C30FE3981DC1A5000008C5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30FE39A1DC1A5000008C5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterProcess.storyboard; sourceTree = "<group>"; };
 		C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserMainApplication.storyboard; sourceTree = "<group>"; };
 		C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarrierMainApplication.storyboard; sourceTree = "<group>"; };
+		C33C895B1DC538CA008CEF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3CF79EF1DC578EA00C2A874 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F2DA0AE1EBBFAFDE74E4A505 /* Pods-NalFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NalFind.release.xcconfig"; path = "Pods/Target Support Files/Pods-NalFind/Pods-NalFind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128065B3815F04AD50707052 /* Pods_NalFind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F67E882D5988831F9A3027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F6E75368EB7787FAB545F5A /* Pods_NalFind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B97C2D6861CEF42346A054F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E54D2C7EB9674FC917C93C0 /* Pods-NalFind.debug.xcconfig */,
+				F2DA0AE1EBBFAFDE74E4A505 /* Pods-NalFind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C30FE3821DC1A5000008C5F2 = {
 			isa = PBXGroup;
 			children = (
 				C30FE38D1DC1A5000008C5F2 /* NalFind */,
 				C30FE38C1DC1A5000008C5F2 /* Products */,
+				B97C2D6861CEF42346A054F6 /* Pods */,
+				01F67E882D5988831F9A3027 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +86,10 @@
 		C30FE38D1DC1A5000008C5F2 /* NalFind */ = {
 			isa = PBXGroup;
 			children = (
+				C33C895B1DC538CA008CEF14 /* Assets.xcassets */,
 				C30FE3A01DC1A5550008C5F2 /* StoryBoard */,
 				C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */,
 				C30FE3901DC1A5000008C5F2 /* ViewController.swift */,
-				C30FE3951DC1A5000008C5F2 /* Assets.xcassets */,
 				C30FE39A1DC1A5000008C5F2 /* Info.plist */,
 			);
 			path = NalFind;
@@ -77,6 +103,7 @@
 				C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */,
 				C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */,
 				C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */,
+				C3CF79EF1DC578EA00C2A874 /* Settings.storyboard */,
 			);
 			name = StoryBoard;
 			sourceTree = "<group>";
@@ -88,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C30FE39D1DC1A5000008C5F2 /* Build configuration list for PBXNativeTarget "NalFind" */;
 			buildPhases = (
+				46DD8C1D73D2AF339390EF37 /* [CP] Check Pods Manifest.lock */,
 				C30FE3871DC1A5000008C5F2 /* Sources */,
 				C30FE3881DC1A5000008C5F2 /* Frameworks */,
 				C30FE3891DC1A5000008C5F2 /* Resources */,
+				92E695F6326B2C3C317D1605 /* [CP] Embed Pods Frameworks */,
+				F1773CA1DC8AD832F6759F7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,7 +147,7 @@
 				};
 			};
 			buildConfigurationList = C30FE3861DC1A5000008C5F2 /* Build configuration list for PBXProject "NalFind" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -142,13 +172,62 @@
 				C30FE3991DC1A5000008C5F2 /* LaunchScreen.storyboard in Resources */,
 				C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */,
 				C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */,
-				C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */,
 				C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */,
+				C33C895C1DC538CA008CEF14 /* Assets.xcassets in Resources */,
 				C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */,
+				C3CF79F01DC578EA00C2A874 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46DD8C1D73D2AF339390EF37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92E695F6326B2C3C317D1605 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NalFind/Pods-NalFind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1773CA1DC8AD832F6759F7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NalFind/Pods-NalFind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C30FE3871DC1A5000008C5F2 /* Sources */ = {
@@ -222,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -266,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -277,27 +356,33 @@
 		};
 		C30FE39E1DC1A5000008C5F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E54D2C7EB9674FC917C93C0 /* Pods-NalFind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 824B7T4CNG;
 				INFOPLIST_FILE = NalFind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C30FE39F1DC1A5000008C5F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DA0AE1EBBFAFDE74E4A505 /* Pods-NalFind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 824B7T4CNG;
 				INFOPLIST_FILE = NalFind/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -320,6 +405,7 @@
 				C30FE39F1DC1A5000008C5F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
