@@ -1,6 +1,0 @@
-framework module Pods_NalFind {
-  umbrella header "Pods-NalFind-umbrella.h"
-
-  export *
-  module * { export * }
-}

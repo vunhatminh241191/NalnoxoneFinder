@@ -32,7 +32,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <segue destination="ECS-hX-PQf" kind="show" identifier="registerProcess" id="86V-am-dUv"/>
                         <segue destination="VuF-3U-rsL" kind="show" identifier="userMainApplication" id="ZRt-xJ-xEg"/>
                         <segue destination="Qoo-NU-drL" kind="show" identifier="carrierMainApplication" id="SL8-Js-b5K"/>
                     </connections>
@@ -41,21 +40,13 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--RegisterProcess-->
-        <scene sceneID="bEh-cl-9rA">
-            <objects>
-                <viewControllerPlaceholder storyboardName="RegisterProcess" id="ECS-hX-PQf" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e6F-gW-HRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="646" y="-252"/>
-        </scene>
         <!--UserMainApplication-->
         <scene sceneID="xCw-pQ-rbr">
             <objects>
                 <viewControllerPlaceholder storyboardName="UserMainApplication" id="VuF-3U-rsL" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEY-70-kaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="646" y="31"/>
+            <point key="canvasLocation" x="633" y="-285"/>
         </scene>
         <!--CarrierMainApplication-->
         <scene sceneID="eRe-z0-zCN">
