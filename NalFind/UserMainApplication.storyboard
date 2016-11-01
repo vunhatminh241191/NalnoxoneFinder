@@ -14,7 +14,7 @@
         <scene sceneID="AOj-MM-WgR">
             <objects>
                 <navigationController navigationBarHidden="YES" id="BYo-Au-Crq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LSA-5m-r9X">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="LSA-5m-r9X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -26,10 +26,18 @@
             </objects>
             <point key="canvasLocation" x="-361" y="32"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
+        <scene sceneID="1ha-kS-TM8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="02m-1f-mO7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0p-Gm-0bN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="-46"/>
+        </scene>
+        <!--User Main Application-->
         <scene sceneID="7sv-zY-emb">
             <objects>
-                <viewController id="NqK-yh-SIX" sceneMemberID="viewController">
+                <viewController id="NqK-yh-SIX" customClass="UserMainApplication" customModule="NalFind" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u3A-tF-VZw"/>
                         <viewControllerLayoutGuide type="bottom" id="s7j-CK-ny0"/>
@@ -67,11 +75,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Find Nalnoxone" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHN-gM-bfc">
-                                <rect key="frame" x="283" y="20" width="111" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" editable="NO" text="Find Nalnoxone" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHN-gM-bfc">
+                                <rect key="frame" x="276" y="28" width="83" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="XcY-JJ-5GO"/>
+                                    <constraint firstAttribute="height" constant="47" id="lfh-y8-Qyi"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6u-Lt-uki" userLabel="overdose">
@@ -87,6 +98,7 @@
                             <constraint firstItem="XDH-YI-Jw7" firstAttribute="top" secondItem="wID-1N-KdF" secondAttribute="bottom" constant="8" id="0OV-Pg-4ts"/>
                             <constraint firstItem="wID-1N-KdF" firstAttribute="top" secondItem="u3A-tF-VZw" secondAttribute="bottom" id="9WX-mZ-KnG"/>
                             <constraint firstItem="da5-Ki-Ydc" firstAttribute="leading" secondItem="DhR-On-sdR" secondAttribute="leadingMargin" id="9Y9-Hl-3Wl"/>
+                            <constraint firstItem="EHN-gM-bfc" firstAttribute="trailing" secondItem="DhR-On-sdR" secondAttribute="trailingMargin" id="Eh9-tc-zey"/>
                             <constraint firstItem="rJT-VJ-Obq" firstAttribute="centerY" secondItem="wID-1N-KdF" secondAttribute="centerY" id="OCC-Db-XIr"/>
                             <constraint firstItem="da5-Ki-Ydc" firstAttribute="top" secondItem="u3A-tF-VZw" secondAttribute="bottom" id="Sj7-xA-hHS"/>
                             <constraint firstItem="s7j-CK-ny0" firstAttribute="top" secondItem="XDH-YI-Jw7" secondAttribute="bottom" constant="70" id="TE3-WS-CIj"/>
@@ -97,14 +109,22 @@
                             <constraint firstItem="t6u-Lt-uki" firstAttribute="leading" secondItem="DhR-On-sdR" secondAttribute="leadingMargin" id="hgr-XR-xdZ"/>
                             <constraint firstAttribute="trailing" secondItem="wID-1N-KdF" secondAttribute="trailing" id="kMH-hJ-IeW"/>
                             <constraint firstItem="t6u-Lt-uki" firstAttribute="trailing" secondItem="DhR-On-sdR" secondAttribute="trailingMargin" id="wrw-Vr-EqD"/>
+                            <constraint firstItem="EHN-gM-bfc" firstAttribute="top" secondItem="u3A-tF-VZw" secondAttribute="bottom" constant="8" id="xo2-6E-tYh"/>
                             <constraint firstItem="s7j-CK-ny0" firstAttribute="top" secondItem="t6u-Lt-uki" secondAttribute="bottom" constant="11" id="znY-IV-NJi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Aag-FO-LWq"/>
+                    <connections>
+                        <outlet property="findNalnoxone" destination="EHN-gM-bfc" id="7ao-L2-G6J"/>
+                        <outlet property="mapView" destination="XDH-YI-Jw7" id="6xt-ID-AsK"/>
+                        <outlet property="overdose" destination="t6u-Lt-uki" id="2mh-9h-KCF"/>
+                        <outlet property="settings" destination="da5-Ki-Ydc" id="q41-nf-kyc"/>
+                        <segue destination="02m-1f-mO7" kind="show" identifier="settings" id="ZAg-RF-SD9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3f5-lI-Stp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="381.15942028985512" y="31.793478260869566"/>
+            <point key="canvasLocation" x="380" y="31.03448275862069"/>
         </scene>
     </scenes>
     <resources>

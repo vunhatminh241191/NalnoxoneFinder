@@ -15,7 +15,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="ncu-Gc-ulK" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="69o-ZO-Tko">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="69o-ZO-Tko">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

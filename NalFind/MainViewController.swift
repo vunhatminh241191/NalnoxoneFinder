@@ -7,11 +7,17 @@ class MainViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     var ref: FIRDatabaseReference!
     fileprivate var _refHandle: FIRDatabaseHandle!
     var storageRef: FIRStorageReference!
+    
     var remoteConfig: FIRRemoteConfig!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.performSegue(withIdentifier: "userMainApplication", sender: self)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,10 +31,10 @@ class MainViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 
     func sendMessage(withData data: [String: String]) {
         var mdata = data
-        mdata[Constants.MessageFields.name] = AppState.sharedInstance.displayName
-        if let photoURL = AppState.sharedInstance.photoURL {
-            mdata[Constants.MessageFields.photoURL] = photoURL.absoluteString
-        }
+//        mdata[Constants.MessageFields.name] = AppState.sharedInstance.displayName
+//        if let photoURL = AppState.sharedInstance.photoURL {
+//            mdata[Constants.MessageFields.photoURL] = photoURL.absoluteString
+//        }
         // Push data to Firebase Database
         self.ref.child("messages").childByAutoId().setValue(mdata)
     }
