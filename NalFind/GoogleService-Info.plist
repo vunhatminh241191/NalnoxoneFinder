@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>866516454721-gf38cqhaljpejanffvrvt3tluji5cp87.apps.googleusercontent.com</string>
+	<string>866516454721-u9i49caa3bo1tuoa301lj78qtcl2vgmt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.866516454721-gf38cqhaljpejanffvrvt3tluji5cp87</string>
+	<string>com.googleusercontent.apps.866516454721-u9i49caa3bo1tuoa301lj78qtcl2vgmt</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDL0Lh7nslLBMS3tNbr94MZqUAl5MxWm_o</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>NalFindTeam.NalFind</string>
+	<string>com.nalnoxone.nalfind</string>
 	<key>PROJECT_ID</key>
 	<string>nalnoxone2016</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:866516454721:ios:6d02d88cbe0d6bb0</string>
+	<string>1:866516454721:ios:845f02f7a8d2f95a</string>
 	<key>DATABASE_URL</key>
 	<string>https://nalnoxone2016.firebaseio.com</string>
 </dict>
