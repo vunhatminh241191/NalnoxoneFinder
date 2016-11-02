@@ -70,6 +70,7 @@ class UserMainApplication: UIViewController {
             for point in listPoints {
                 let marker = GMSMarker()
                 marker.position = CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint)
+                marker.icon = GMSMarker.markerImage(with: getRandomColor())
                 marker.map = mapView
                 path.add(CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint))
             }
@@ -100,9 +101,12 @@ class UserMainApplication: UIViewController {
         for point in listOverDosePoints {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint)
+            marker.icon = GMSMarker.markerImage(with: getRandomColor())
             marker.map = mapView
+            marker.appearAnimation = kGMSMarkerAnimationPop
             path.add(CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint))
         }
+
         let bounds = GMSCoordinateBounds(path: path)
         mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 50.0))
 
@@ -113,6 +117,15 @@ class UserMainApplication: UIViewController {
             alertController.dismiss(animated: true, completion: nil)
         })
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func getRandomColor() -> UIColor{
+        //Generate between 0 to 1
+        let red:CGFloat = CGFloat(drand48())
+        let green:CGFloat = CGFloat(drand48())
+        let blue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
     }
 }
 
@@ -149,6 +162,6 @@ extension UserMainApplication: GMSMapViewDelegate {
 
             self.present(alertController, animated: true, completion: nil)
         }
-        return true;
+        return true
     }
 }
