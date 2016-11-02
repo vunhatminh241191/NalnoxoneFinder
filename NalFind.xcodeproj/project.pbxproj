@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		08F0E17E3A858FD1C5BADD33 /* Pods-NalFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NalFind.release.xcconfig"; path = "Pods/Target Support Files/Pods-NalFind/Pods-NalFind.release.xcconfig"; sourceTree = "<group>"; };
+		3F21D0061DC874570094897B /* NalFind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NalFind.entitlements; sourceTree = "<group>"; };
 		3F87C0761DC6B342006D16EC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		863920BAC6E31D841A5076FA /* Pods_NalFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NalFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +106,7 @@
 		C30FE38D1DC1A5000008C5F2 /* NalFind */ = {
 			isa = PBXGroup;
 			children = (
+				3F21D0061DC874570094897B /* NalFind.entitlements */,
 				3F87C0751DC6B097006D16EC /* Modules */,
 				C30FE3A01DC1A5550008C5F2 /* StoryBoard */,
 				C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */,
@@ -168,6 +170,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 824B7T4CNG;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -220,7 +227,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		35B22D3E43CFD7A2E633585E /* [CP] Copy Pods Resources */ = {
@@ -390,6 +397,7 @@
 			baseConfigurationReference = E2A80B35363B8974469A9496 /* Pods-NalFind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NalFind/NalFind.entitlements;
 				DEVELOPMENT_TEAM = 824B7T4CNG;
 				INFOPLIST_FILE = NalFind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
@@ -405,6 +413,7 @@
 			baseConfigurationReference = 08F0E17E3A858FD1C5BADD33 /* Pods-NalFind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NalFind/NalFind.entitlements;
 				DEVELOPMENT_TEAM = 824B7T4CNG;
 				INFOPLIST_FILE = NalFind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
