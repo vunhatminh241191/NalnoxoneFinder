@@ -11,6 +11,7 @@ target 'NalFind' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Messaging'
   pod 'M13Checkbox'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
