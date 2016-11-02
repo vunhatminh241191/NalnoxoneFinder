@@ -17,7 +17,13 @@ class MainViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.performSegue(withIdentifier: "userMainApplication", sender: self)
+        let defaults = UserDefaults.standard
+        let carrier = defaults.object(forKey: "carrier")
+        if carrier as? Int == 1 {
+            self.performSegue(withIdentifier: "carrierMainApplication", sender: self)
+        } else {
+            self.performSegue(withIdentifier: "userMainApplication", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {

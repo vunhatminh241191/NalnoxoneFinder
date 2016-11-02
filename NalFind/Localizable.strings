@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  NalFind
+
+  Created by Minh Vu on 11/2/16.
+
+*/
+
+"? What an overdose looks like" = "The person’s face is extremely pale and/or feels clammy to the touch\n\n The person’s body goes limp\n\n The person’s fingernails or lips have a purple or blue color\n\n The person starts vomiting or making gurgling noises\n\n The person cannot be waking up or unable to speak or not respond when you call their name, and shake them\n\n The person’s breathing or heartbeat slows or stop";
+
+"? Using injectable naloxone" = "Pop off orange top of vial and insert syringe\n\n Remove 1 cc of Narcan by pulling down on the plunger\n\n Insert syringe into a large muscle and push the plunger in";
+
+"? Using nasal naloxone" = "Remove the yellow cap atop the plastic tube and screw the atomizer on\n\n Remove the bottom yellow cap and the red cap from the vial; screw the vial into the bottom of the tube\n\n Spray half the vial up each nostril by pushing the vial up through the tube";
+
+"? Using naloxone auto-injector" = "Pull EVZIO from the outer case (Do not go to step 2 if you are not ready to use)\n\n Pull off the red safety guard. Do not touch the black case of the auto-injector which is where the needle comes out\n\n Evzio automatically inserts the needle intramuscularly or subcutaneously and retracts the needle fully into its housing\n\n If no response in 3--5: Give a second dose, if available, and call 911";
+
+"? Recovery Position" = "If you must leave the person alone at any time, roll them onto their side so they won’t choke if they start to vomit";

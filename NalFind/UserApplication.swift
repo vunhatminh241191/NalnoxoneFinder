@@ -33,6 +33,10 @@ class UserMainApplication: UIViewController {
                       NalFinder(latPoint: 45.6372174, longPoint: -122.6343184),
                       NalFinder(latPoint: 45.5283386, longPoint: -122.6595437)]
     
+    var currentLocation = CLLocationCoordinate2D()
+    
+    let rescuerLocation = NalFinder(latPoint: 45.4486938, longPoint: -122.7150369 )
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
@@ -44,6 +48,7 @@ class UserMainApplication: UIViewController {
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         }
+        overdose.addTarget(self, action: #selector(self.OverDoseFunction), for: .touchDown)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -88,6 +93,27 @@ class UserMainApplication: UIViewController {
         //Shows the my location button on the map
         mapView.settings.myLocationButton = true
     }
+    
+    func OverDoseFunction() {
+        let listOverDosePoints = [rescuerLocation, NalFinder(latPoint: currentLocation.latitude, longPoint: currentLocation.longitude)]
+        let path = GMSMutablePath()
+        for point in listOverDosePoints {
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint)
+            marker.map = mapView
+            path.add(CLLocationCoordinate2D(latitude: point._latPoint, longitude: point._longPoint))
+        }
+        let bounds = GMSCoordinateBounds(path: path)
+        mapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 50.0))
+
+        let alertController = UIAlertController(title: "Notice",message: "There are 5 minutes travel time for the closet carrier"
+            , preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Notice", style: UIAlertActionStyle.default) {
+            UIAlertAction in
+            alertController.dismiss(animated: true, completion: nil)
+        })
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
 
 extension UserMainApplication: CLLocationManagerDelegate{
@@ -102,6 +128,7 @@ extension UserMainApplication: CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            currentLocation = location.coordinate
             locationManager.stopUpdatingLocation()
         }
     }
@@ -109,5 +136,19 @@ extension UserMainApplication: CLLocationManagerDelegate{
 }
 
 extension UserMainApplication: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        if marker.position.latitude == 45.4486938 && marker.position.longitude == -122.7150369 {
+            let alertController = UIAlertController(title: "Wanna Call",message: "You can connect with your rescuer"
+                , preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Call", style: UIAlertActionStyle.default) {
+                UIAlertAction in
+                alertController.dismiss(animated: true, completion: nil)
+            })
+            alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
+                UIAlertAction in alertController.dismiss(animated: true, completion: nil)})
 
+            self.present(alertController, animated: true, completion: nil)
+        }
+        return true;
+    }
 }

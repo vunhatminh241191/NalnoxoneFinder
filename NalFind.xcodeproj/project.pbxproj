@@ -10,6 +10,8 @@
 		2F145585D74A51326BC29C9F /* Pods_NalFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 863920BAC6E31D841A5076FA /* Pods_NalFind.framework */; };
 		3F87C0771DC6B342006D16EC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87C0761DC6B342006D16EC /* SignInViewController.swift */; };
 		3FB3866B1DC6ACDD003EB7DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */; };
+		C304ED3B1DC9B213006EFA66 /* EachActivityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304ED3A1DC9B213006EFA66 /* EachActivityData.swift */; };
+		C304ED3D1DC9C77F006EFA66 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C304ED3C1DC9C77F006EFA66 /* ProfileData.swift */; };
 		C30FE38F1DC1A5000008C5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */; };
 		C30FE3911DC1A5000008C5F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FE3901DC1A5000008C5F2 /* MainViewController.swift */; };
 		C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3921DC1A5000008C5F2 /* Main.storyboard */; };
@@ -18,9 +20,13 @@
 		C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A11DC1A8040008C5F2 /* RegisterProcess.storyboard */; };
 		C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A51DC1AA5A0008C5F2 /* UserMainApplication.storyboard */; };
 		C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */; };
+		C3325FF81DC976970054054B /* ActivityHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3325FF71DC976970054054B /* ActivityHistory.swift */; };
 		C3D177921DC7BEEB009B9F1D /* UserApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D177911DC7BEEB009B9F1D /* UserApplication.swift */; };
 		C3D177941DC80183009B9F1D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D177931DC80183009B9F1D /* Settings.swift */; };
 		C3D177961DC84E8B009B9F1D /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D177951DC84E8B009B9F1D /* Settings.storyboard */; };
+		C3E4A4751DC9E56200879D3C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3E4A4741DC9E56200879D3C /* Localizable.strings */; };
+		C3E4A4771DC9E8DB00879D3C /* QuestionMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4A4761DC9E8DB00879D3C /* QuestionMark.swift */; };
+		C3F8024E1DCA0C5B0057C41C /* CarrierMainApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8024D1DCA0C5B0057C41C /* CarrierMainApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,8 @@
 		3F87C0761DC6B342006D16EC /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		863920BAC6E31D841A5076FA /* Pods_NalFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NalFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C304ED3A1DC9B213006EFA66 /* EachActivityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachActivityData.swift; sourceTree = "<group>"; };
+		C304ED3C1DC9C77F006EFA66 /* ProfileData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
 		C30FE38B1DC1A5000008C5F2 /* NalFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NalFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C30FE38E1DC1A5000008C5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C30FE3901DC1A5000008C5F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -40,9 +48,13 @@
 		C30FE3A71DC1AA710008C5F2 /* CarrierMainApplication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarrierMainApplication.storyboard; sourceTree = "<group>"; };
 		C3274E231DC7AD3D00ED3184 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C3274E251DC7AD5600ED3184 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C3325FF71DC976970054054B /* ActivityHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityHistory.swift; sourceTree = "<group>"; };
 		C3D177911DC7BEEB009B9F1D /* UserApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApplication.swift; sourceTree = "<group>"; };
 		C3D177931DC80183009B9F1D /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C3D177951DC84E8B009B9F1D /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C3E4A4741DC9E56200879D3C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C3E4A4761DC9E8DB00879D3C /* QuestionMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionMark.swift; sourceTree = "<group>"; };
+		C3F8024D1DCA0C5B0057C41C /* CarrierMainApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrierMainApplication.swift; sourceTree = "<group>"; };
 		E2A80B35363B8974469A9496 /* Pods-NalFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NalFind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NalFind/Pods-NalFind.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +127,12 @@
 				3FB3866A1DC6ACDD003EB7DD /* GoogleService-Info.plist */,
 				C3D177911DC7BEEB009B9F1D /* UserApplication.swift */,
 				C3D177931DC80183009B9F1D /* Settings.swift */,
+				C3325FF71DC976970054054B /* ActivityHistory.swift */,
+				C304ED3A1DC9B213006EFA66 /* EachActivityData.swift */,
+				C304ED3C1DC9C77F006EFA66 /* ProfileData.swift */,
+				C3E4A4741DC9E56200879D3C /* Localizable.strings */,
+				C3E4A4761DC9E8DB00879D3C /* QuestionMark.swift */,
+				C3F8024D1DCA0C5B0057C41C /* CarrierMainApplication.swift */,
 			);
 			path = NalFind;
 			sourceTree = "<group>";
@@ -198,6 +216,7 @@
 				C30FE3A61DC1AA5A0008C5F2 /* UserMainApplication.storyboard in Resources */,
 				C30FE3A21DC1A8040008C5F2 /* RegisterProcess.storyboard in Resources */,
 				C3D177961DC84E8B009B9F1D /* Settings.storyboard in Resources */,
+				C3E4A4751DC9E56200879D3C /* Localizable.strings in Resources */,
 				C30FE3961DC1A5000008C5F2 /* Assets.xcassets in Resources */,
 				C30FE3941DC1A5000008C5F2 /* Main.storyboard in Resources */,
 				C30FE3A81DC1AA710008C5F2 /* CarrierMainApplication.storyboard in Resources */,
@@ -260,11 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F8024E1DCA0C5B0057C41C /* CarrierMainApplication.swift in Sources */,
 				C30FE3911DC1A5000008C5F2 /* MainViewController.swift in Sources */,
+				C304ED3B1DC9B213006EFA66 /* EachActivityData.swift in Sources */,
 				C30FE38F1DC1A5000008C5F2 /* AppDelegate.swift in Sources */,
 				3F87C0771DC6B342006D16EC /* SignInViewController.swift in Sources */,
+				C3325FF81DC976970054054B /* ActivityHistory.swift in Sources */,
 				C3D177921DC7BEEB009B9F1D /* UserApplication.swift in Sources */,
 				C3D177941DC80183009B9F1D /* Settings.swift in Sources */,
+				C304ED3D1DC9C77F006EFA66 /* ProfileData.swift in Sources */,
+				C3E4A4771DC9E8DB00879D3C /* QuestionMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

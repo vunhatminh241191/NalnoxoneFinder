@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-361" y="32"/>
         </scene>
-        <!--User Main Application-->
+        <!--Carrier Main Application-->
         <scene sceneID="zpi-DP-ylQ">
             <objects>
-                <viewController id="kx4-L3-zNB" customClass="UserMainApplication" customModule="NalFind" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kx4-L3-zNB" customClass="CarrierMainApplication" customModule="NalFind" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Bs-sJ-vko"/>
                         <viewControllerLayoutGuide type="bottom" id="ijN-ZX-f9L"/>
@@ -97,14 +97,23 @@
                     </view>
                     <navigationItem key="navigationItem" id="ls7-p8-6aX"/>
                     <connections>
-                        <outlet property="findNalnoxone" destination="XdQ-uf-l3M" id="bl1-qO-6jt"/>
-                        <outlet property="mapView" destination="inK-Tt-yp8" id="cwD-Zn-3kU"/>
-                        <outlet property="settings" destination="MUH-Od-w89" id="hYT-TZ-jnc"/>
+                        <outlet property="findingNaloxone" destination="XdQ-uf-l3M" id="ghQ-jN-vSa"/>
+                        <outlet property="mapView" destination="inK-Tt-yp8" id="3dp-00-X1N"/>
+                        <outlet property="settings" destination="MUH-Od-w89" id="ZN6-O4-zlX"/>
+                        <segue destination="YJO-T5-2JE" kind="show" identifier="settings" id="awz-SY-225"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HbA-g3-esY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="380" y="31.03448275862069"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="hwe-o2-1r8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="YJO-T5-2JE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wkd-Vg-dy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="-50"/>
         </scene>
     </scenes>
     <resources>
