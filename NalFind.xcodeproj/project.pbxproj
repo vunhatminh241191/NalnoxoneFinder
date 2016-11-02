@@ -168,7 +168,7 @@
 				TargetAttributes = {
 					C30FE38A1DC1A5000008C5F2 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 824B7T4CNG;
+						DevelopmentTeam = EUKQS3744F;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -398,11 +398,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NalFind/NalFind.entitlements;
-				DEVELOPMENT_TEAM = 824B7T4CNG;
+				DEVELOPMENT_TEAM = EUKQS3744F;
 				INFOPLIST_FILE = NalFind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nalnoxone.nalfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -414,11 +414,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NalFind/NalFind.entitlements;
-				DEVELOPMENT_TEAM = 824B7T4CNG;
+				DEVELOPMENT_TEAM = EUKQS3744F;
 				INFOPLIST_FILE = NalFind/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = NalFindTeam.NalFind;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nalnoxone.nalfind;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
